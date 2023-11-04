@@ -46,22 +46,28 @@ for($i=1; $i<=100; $i= $i+2)
   $ejercicio_5 = "Ejercicio 5 - Mostrar la suma de los números de 1 a 20.";
 echo $ejercicio_5;
 
-$i=1;
+$i = 1;
+$suma = 0;
 
-for($i=1; $i<=20; $i= $i+1)
-{
-    print "<p>$i</p>\n";
-  } 
+while ( $i <= 20){
+	$suma = $suma + $i;
+	$i = $i + 1;
+}
+echo "La suma de los números del 1 al 20 es = $suma"; 
+echo "<br>";
+echo "<br>";
 
-  $ejercicio_6 = "Ejercicio 6 - Mostrar la suma de números pares de 1 a 20.";
-  echo $ejercicio_6;
+$ejercicio_6 = "Ejercicio 6 - Mostrar la suma de números pares de 1 a 20.";
+echo $ejercicio_6;
   
-  $i=1;
-  
-  for($i=0; $i<=20; $i= $i+2)
-  {
-      print "<p>$i</p>\n";
-    } 
+$i = 2;
+$sumapar = 0;
+
+while ( $i <= 20){
+	$sumapar = $sumapar + $i;
+	$i = $i + 2;
+}
+echo "La suma de los números pares del 1 al 20 es = $sumapar"; 
 
 ?>
 </body>
